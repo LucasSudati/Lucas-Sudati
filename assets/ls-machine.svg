@@ -6,8 +6,8 @@
 <style>
  text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
  .wire{fill:none;stroke:#30363d;stroke-width:2}
- .signal{fill:none;stroke:url(#line);stroke-width:3;stroke-linecap:round;stroke-dasharray:10 90;animation:flow 1.6s linear infinite;filter:url(#glow)}
- .slow{animation-duration:2.6s}.fast{animation-duration:1.15s}
+ .signal{fill:none;stroke:url(#line);stroke-width:3;stroke-linecap:round;stroke-dasharray:10 90;animation:flow .16s linear infinite;filter:url(#glow)}
+ .slow{animation-duration:.26s}.fast{animation-duration:.115s}
  .ring{fill:none;stroke:#30363d;stroke-width:2;transform-origin:450px 165px;animation:spin 18s linear infinite}
  .ring2{animation-direction:reverse;animation-duration:12s}
  .pulse{animation:pulse 2s ease-in-out infinite}
