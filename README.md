@@ -2,25 +2,12 @@
 
 # Lucas Sudati
 
-**Engenharia de Computação · Matemática · Tecnologia**
+**Matemática · Computação · Engenharia**
 
-Licenciado em **Matemática**, **Técnico em Informática** e acadêmico de **Engenharia de Computação**.
+<img src="./assets/ls-machine.svg" alt="LS Machine" width="100%">
 
-`Python` · `C` · `C#` · `JavaScript` · `Lua` · `MicroPython` · `RP2040` · `ESP32`
+Licenciado em **Matemática** · **Técnico em Informática** · Acadêmico de **Engenharia de Computação**
 
----
-
-## LS//CORE
-
-**Este perfil tem um estado global. Mova o sinal, ative A · B · C e alcance o núcleo LS.**
-
-![LS CORE](./assets/lscore.svg)
-
-[⬆️ UP](https://github.com/LucasSudati/LucasSudati/issues/new?title=LSCORE%3AUP) ·
-[⬅️ LEFT](https://github.com/LucasSudati/LucasSudati/issues/new?title=LSCORE%3ALEFT) ·
-[➡️ RIGHT](https://github.com/LucasSudati/LucasSudati/issues/new?title=LSCORE%3ARIGHT) ·
-[⬇️ DOWN](https://github.com/LucasSudati/LucasSudati/issues/new?title=LSCORE%3ADOWN)
-
-<sub>Cada comando altera o mesmo circuito para todos os visitantes.</sub>
+<sub>Python · C · C# · JavaScript · Lua · MicroPython · RP2040 · ESP32</sub>
 
 </div>
