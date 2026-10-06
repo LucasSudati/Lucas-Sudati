@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="390" viewBox="0 0 900 390">
+<defs>
+ <linearGradient id="sig" x1="0" x2="1"><stop stop-color="#1f6feb"/><stop offset=".5" stop-color="#58a6ff"/><stop offset="1" stop-color="#1f6feb"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>
+ text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+ .box{fill:#161b22;stroke:#30363d;stroke-width:1.5}
+ .title{fill:#8b949e;font-size:10px;letter-spacing:1px}
+ .value{fill:#58a6ff;font-size:15px;font-weight:700}
+ .wire{fill:none;stroke:#30363d;stroke-width:2}
+ .bus{fill:none;stroke:url(#sig);stroke-width:3;stroke-linecap:round;stroke-dasharray:8 42;filter:url(#glow)}
+ .ctl{fill:none;stroke:#484f58;stroke-width:1.5;stroke-dasharray:3 6}
+ .node{fill:#58a6ff}
+ .ring{fill:none;stroke:#30363d;stroke-width:1.5}
+ .pulse{animation:pulse 1.2s ease-in-out infinite}
+ @keyframes pulse{50%{opacity:.25}}
+ @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect width="900" height="390" rx="18" fill="#0d1117"/>
+
+<!-- main blocks -->
+<rect class="box" x="35" y="92" width="135" height="190" rx="10"/>
+<text class="title" x="102" y="116" text-anchor="middle">MEM / 256 × 8</text>
+<g fill="#8b949e" font-size="10">
+ <text x="52" y="145">00</text><text x="78" y="145">LDA  F0</text>
+ <text x="52" y="166">02</text><text x="78" y="166">ADD  F1</text>
+ <text x="52" y="187">04</text><text x="78" y="187">STA  F0</text>
+ <text x="52" y="208">06</text><text x="78" y="208">JMP  00</text>
+ <text x="52" y="239">F0</text><text class="value" x="78" y="239">05</text>
+ <text x="52" y="260">F1</text><text class="value" x="78" y="260">01</text>
+</g>
+
+<rect class="box" x="225" y="38" width="105" height="62" rx="9"/>
+<text class="title" x="277" y="59" text-anchor="middle">PC</text>
+<text class="value" x="277" y="84" text-anchor="middle">00 → 02 → 04 → 06</text>
+
+<rect class="box" x="225" y="132" width="105" height="62" rx="9"/>
+<text class="title" x="277" y="153" text-anchor="middle">REM / MAR</text>
+<text class="value" x="277" y="178" text-anchor="middle">ADDR</text>
+
+<rect class="box" x="225" y="226" width="105" height="62" rx="9"/>
+<text class="title" x="277" y="247" text-anchor="middle">RDM / MDR</text>
+<text class="value" x="277" y="272" text-anchor="middle">DATA</text>
+
+<rect class="box" x="397" y="38" width="110" height="62" rx="9"/>
+<text class="title" x="452" y="59" text-anchor="middle">RI / IR</text>
+<text class="value" x="452" y="84" text-anchor="middle">OPCODE</text>
+
+<rect class="box" x="397" y="132" width="110" height="62" rx="9"/>
+<text class="title" x="452" y="153" text-anchor="middle">UC / CONTROL</text>
+<text class="value pulse" x="452" y="178" text-anchor="middle">FETCH · EXEC</text>
+
+<rect class="box" x="580" y="60" width="115" height="74" rx="10"/>
+<text class="title" x="637" y="83" text-anchor="middle">AC / 8 BIT</text>
+<text class="value" x="637" y="112" text-anchor="middle">00000110</text>
+
+<path d="M637 171l70 43-70 43-70-43z" fill="#161b22" stroke="#58a6ff" stroke-width="1.7"/>
+<text class="title" x="637" y="207" text-anchor="middle">ULA / ALU</text>
+<text class="value" x="637" y="229" text-anchor="middle">ADD</text>
+
+<rect class="box" x="755" y="145" width="105" height="88" rx="10"/>
+<text class="title" x="807" y="168" text-anchor="middle">FLAGS</text>
+<text class="value" x="807" y="195" text-anchor="middle">N 0</text>
+<text class="value" x="807" y="218" text-anchor="middle">Z 0</text>
+
+<!-- static wiring -->
+<path class="wire" d="M170 163H225M170 257H225M330 163H397M330 257H540V214H567M507 69H545V97H580M507 163H545V97M695 97H730V189H755M707 214H755"/>
+<path class="wire" d="M277 100V132M452 100V132M637 134V171"/>
+<path class="ctl" d="M397 163H350V69H330M507 163H545V310H102V282"/>
+<path class="ctl" d="M452 194V320H807V233"/>
+
+<!-- animated transfers -->
+<path class="bus" d="M277 100V132"><animate attributeName="stroke-dashoffset" from="0" to="-250" dur=".38s" repeatCount="indefinite"/></path>
+<path class="bus" d="M225 163H170"><animate attributeName="stroke-dashoffset" from="0" to="-250" dur=".31s" repeatCount="indefinite"/></path>
+<path class="bus" d="M170 257H225"><animate attributeName="stroke-dashoffset" from="0" to="-250" dur=".27s" repeatCount="indefinite"/></path>
+<path class="bus" d="M330 257H540V214H567"><animate attributeName="stroke-dashoffset" from="0" to="-350" dur=".42s" repeatCount="indefinite"/></path>
+<path class="bus" d="M330 163H397"><animate attributeName="stroke-dashoffset" from="0" to="-250" dur=".24s" repeatCount="indefinite"/></path>
+<path class="bus" d="M507 69H545V97H580"><animate attributeName="stroke-dashoffset" from="0" to="-300" dur=".33s" repeatCount="indefinite"/></path>
+<path class="bus" d="M637 134V171"><animate attributeName="stroke-dashoffset" from="0" to="-250" dur=".21s" repeatCount="indefinite"/></path>
+<path class="bus" d="M707 214H755"><animate attributeName="stroke-dashoffset" from="0" to="-250" dur=".29s" repeatCount="indefinite"/></path>
+
+<g class="node">
+ <circle cx="170" cy="163" r="4"/><circle cx="170" cy="257" r="4"/>
+ <circle cx="330" cy="163" r="4"/><circle cx="330" cy="257" r="4"/>
+ <circle cx="545" cy="97" r="4"/><circle cx="540" cy="214" r="4"/>
+ <circle cx="730" cy="189" r="4"/>
+</g>
+
+<!-- cycle strip -->
+<text x="35" y="337" fill="#8b949e" font-size="10">NEANDER // FETCH → DECODE → EXECUTE</text>
+<path class="wire" d="M35 355H865"/>
+<path class="bus" d="M35 355H865"><animate attributeName="stroke-dashoffset" from="0" to="-500" dur=".55s" repeatCount="indefinite"/></path>
+<text x="865" y="378" text-anchor="end" fill="#484f58" font-size="9">8-BIT ACCUMULATOR ARCHITECTURE</text>
+</svg>

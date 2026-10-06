@@ -1,0 +1,34 @@
+name: LS CORE
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  signal:
+    if: startsWith(github.event.issue.title, 'LSCORE:')
+    runs-on: ubuntu-latest
+    concurrency:
+      group: lscore
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process signal
+        run: python scripts/lscore.py "${{ github.event.issue.title }}" "${{ github.event.issue.user.login }}"
+      - name: Commit state
+        run: |
+          git config user.name "LS CORE"
+          git config user.email "actions@github.com"
+          git add lscore-state.json assets/lscore.svg
+          git diff --cached --quiet || git commit -m "LS//CORE signal by @${{ github.event.issue.user.login }}"
+          git push
+      - name: Respond and close
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --body "$(cat lscore-result.txt)"
+          gh issue close "${{ github.event.issue.number }}"
