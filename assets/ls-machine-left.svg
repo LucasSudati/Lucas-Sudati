@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="210" viewBox="0 0 350 210">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#1f6feb"/><stop offset=".6" stop-color="#58a6ff"/><stop offset="1" stop-color="#1f6feb"/></linearGradient><filter id="gl"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<style>.w{fill:none;stroke:#30363d;stroke-width:2}.s{fill:none;stroke:url(#g);stroke-width:3;stroke-linecap:round;stroke-dasharray:9 75;animation:f 2.8s linear infinite;filter:url(#gl)}.b{animation-duration:4.2s}@keyframes f{to{stroke-dashoffset:-84}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}</style>
+<rect width="350" height="210" fill="#0d1117"/>
+<text x="12" y="27" fill="#8b949e" font-size="10">λ / INPUT</text>
+<text x="12" y="194" fill="#8b949e" font-size="10">Σ / LOGIC</text>
+<path class="w" d="M10 45H105L145 82H340M10 105H245L285 105H340M10 165H105L145 128H340"/>
+<path class="s" d="M10 45H105L145 82H340"/><path class="s b" d="M10 105H340"/><path class="s" d="M10 165H105L145 128H340"/>
+<g fill="#58a6ff"><circle cx="105" cy="45" r="4"/><circle cx="245" cy="105" r="4"/><circle cx="105" cy="165" r="4"/></g>
+</svg>
