@@ -23,7 +23,11 @@
  <path class="wire" d="M565 127H675L720 82H865"/>
  <path class="wire" d="M565 202H675L720 247H865"/>
  <path class="wire" d="M100 165H300"/>
+ <path class="wire" d="M35 120H150L215 145H330"/>
+ <path class="wire" d="M35 210H150L215 185H330"/>
  <path class="wire" d="M600 165H800"/>
+ <path class="wire" d="M570 145H685L750 120H865"/>
+ <path class="wire" d="M570 185H685L750 210H865"/>
 </g>
 <g>
  <path class="signal" d="M35 82H180L225 127H330"><animate attributeName="stroke-dashoffset" from="0" to="-300" dur="0.32s" repeatCount="indefinite"/></path>
@@ -32,6 +36,11 @@
  <path class="signal" d="M565 202H675L720 247H865"><animate attributeName="stroke-dashoffset" from="0" to="-300" dur="0.42s" repeatCount="indefinite"/></path>
  <path class="signal" d="M100 165H300"><animate attributeName="stroke-dashoffset" from="0" to="-300" dur="0.22s" repeatCount="indefinite"/></path>
  <path class="signal" d="M600 165H800"><animate attributeName="stroke-dashoffset" from="0" to="-300" dur="0.32s" repeatCount="indefinite"/></path>
+
+ <path class="signal" d="M35 120H150L215 145H330"><animate attributeName="stroke-dashoffset" from="0" to="-300" dur="0.28s" repeatCount="indefinite"/></path>
+ <path class="signal" d="M35 210H150L215 185H330"><animate attributeName="stroke-dashoffset" from="0" to="-300" dur="0.36s" repeatCount="indefinite"/></path>
+ <path class="signal" d="M570 145H685L750 120H865"><animate attributeName="stroke-dashoffset" from="0" to="-300" dur="0.26s" repeatCount="indefinite"/></path>
+ <path class="signal" d="M570 185H685L750 210H865"><animate attributeName="stroke-dashoffset" from="0" to="-300" dur="0.34s" repeatCount="indefinite"/></path>
 </g>
 <circle class="ring" cx="450" cy="165" r="105" stroke-dasharray="22 11"/>
 <circle class="ring ring2" cx="450" cy="165" r="88" stroke-dasharray="4 13"/>
@@ -45,6 +54,8 @@
  <circle cx="180" cy="82" r="4" class="blink"/><circle cx="180" cy="247" r="4" class="pulse"/>
  <circle cx="720" cy="82" r="4" class="pulse"/><circle cx="720" cy="247" r="4" class="blink"/>
  <circle cx="100" cy="165" r="4"/><circle cx="800" cy="165" r="4"/>
+ <circle cx="150" cy="120" r="3"/><circle cx="150" cy="210" r="3"/>
+ <circle cx="750" cy="120" r="3"/><circle cx="750" cy="210" r="3"/>
 </g>
 <text x="450" y="306" text-anchor="middle" fill="#8b949e" font-size="10" letter-spacing="2">MATHEMATICS // COMPUTATION // ENGINEERING</text>
 </svg>
