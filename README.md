@@ -1,5 +1,5 @@
 <div align="center">
 
-<img src="./assets/ls-machine-v3.svg" alt="LS Machine" width="100%">
+<img src="./assets/neander-machine.svg" alt="NEANDER 8-bit architecture simulation" width="100%">
 
 </div>
