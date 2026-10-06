@@ -2,23 +2,25 @@
 
 # Lucas Sudati
 
-### Engenharia de Computação · Matemática · Tecnologia
-
-</div>
-
-## Sobre mim
+**Engenharia de Computação · Matemática · Tecnologia**
 
 Licenciado em **Matemática**, **Técnico em Informática** e acadêmico de **Engenharia de Computação**.
 
-Interesse em desenvolvimento de software, sistemas embarcados, hardware, computação científica e matemática aplicada.
+`Python` · `C` · `C#` · `JavaScript` · `Lua` · `MicroPython` · `RP2040` · `ESP32`
 
-## Tecnologias
+---
 
-`Python` · `C` · `C#` · `JavaScript` · `Lua` · `MicroPython`  
-`RP2040` · `ESP32` · `Git` · `Linux`
+## LS//CORE
 
-<div align="center">
+**Este perfil tem um estado global. Mova o sinal, ative A · B · C e alcance o núcleo LS.**
 
-**Matemática · Computação · Engenharia**
+![LS CORE](./assets/lscore.svg)
+
+[⬆️ UP](https://github.com/LucasSudati/LucasSudati/issues/new?title=LSCORE%3AUP) ·
+[⬅️ LEFT](https://github.com/LucasSudati/LucasSudati/issues/new?title=LSCORE%3ALEFT) ·
+[➡️ RIGHT](https://github.com/LucasSudati/LucasSudati/issues/new?title=LSCORE%3ARIGHT) ·
+[⬇️ DOWN](https://github.com/LucasSudati/LucasSudati/issues/new?title=LSCORE%3ADOWN)
+
+<sub>Cada comando altera o mesmo circuito para todos os visitantes.</sub>
 
 </div>
