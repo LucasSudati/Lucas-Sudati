@@ -1,5 +1,5 @@
 <div align="center">
 
-<img src="./assets/reference-cpu-functional-v14.svg" alt="Functional CPU with complete physical wiring based on the reference circuit" width="100%">
+<img src="./assets/reference-cpu-functional-v15.svg" alt="Functional CPU with fully connected memory, MUX and internal buses" width="100%">
 
 </div>
