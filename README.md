@@ -1,5 +1,5 @@
 <div align="center">
 
-<img src="./assets/reference-cpu-functional-v10.svg" alt="Functional memory-driven CPU architecture with coherent microstates" width="100%">
+<img src="./assets/reference-cpu-functional-v11.svg" alt="Functional memory-driven CPU with corrected physical routing" width="100%">
 
 </div>
