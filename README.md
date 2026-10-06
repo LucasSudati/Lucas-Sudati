@@ -1,5 +1,5 @@
 <div align="center">
 
-<img src="./assets/mips-reference-layout-v5.svg" alt="MIPS internal bus architecture with live functional memory" width="100%">
+<img src="./assets/mips-reference-layout-v6.svg" alt="MIPS internal bus architecture with memory variable A counting from 0 to 28" width="100%">
 
 </div>
