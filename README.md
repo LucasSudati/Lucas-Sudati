@@ -1,5 +1,5 @@
 <div align="center">
 
-<img src="./assets/mips-reference-layout-v6.svg" alt="MIPS internal bus architecture with memory variable A counting from 0 to 28" width="100%">
+<img src="./assets/mips-reference-layout-v7.svg" alt="MIPS internal bus architecture with synchronized MAR MDR and memory A counter" width="100%">
 
 </div>
