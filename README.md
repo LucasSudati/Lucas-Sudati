@@ -1,5 +1,5 @@
 <div align="center">
 
-<img src="./assets/mips32-live-v1.svg" alt="Animated MIPS32 single-cycle datapath" width="100%">
+<img src="./assets/mips32-complete-v2.svg" alt="Complete animated MIPS32 single-cycle datapath" width="100%">
 
 </div>
