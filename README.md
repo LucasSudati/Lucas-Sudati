@@ -1,5 +1,5 @@
 <div align="center">
 
-<img src="./assets/mips-reference-layout-v9.svg" alt="Processor architecture with extended functional memory table" width="100%">
+<img src="./assets/reference-cpu-functional-v10.svg" alt="Functional memory-driven CPU architecture with coherent microstates" width="100%">
 
 </div>
