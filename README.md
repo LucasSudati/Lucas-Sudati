@@ -1,5 +1,5 @@
 <div align="center">
 
-<img src="./assets/reference-cpu-functional-v19.svg" alt="Functional CPU with corrected MAR to MUX to memory routing" width="100%">
+<img src="./assets/reference-cpu-functional-v20.svg" alt="Functional CPU with complete control block signals" width="100%">
 
 </div>
