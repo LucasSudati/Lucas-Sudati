@@ -6,13 +6,13 @@
 <style>
  text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
  .wire{fill:none;stroke:#30363d;stroke-width:2}
- .signal{fill:none;stroke:url(#line);stroke-width:3;stroke-linecap:round;stroke-dasharray:10 90;animation:flow .16s linear infinite;filter:url(#glow)}
- .slow{animation-duration:.26s}.fast{animation-duration:.115s}
+ .signal{fill:none;stroke:url(#line);stroke-width:3;stroke-linecap:round;stroke-dasharray:7 43;animation:flow .32s linear infinite;filter:url(#glow)}
+ .slow{animation-duration:.42s}.fast{animation-duration:.22s}
  .ring{fill:none;stroke:#30363d;stroke-width:2;transform-origin:450px 165px;animation:spin 18s linear infinite}
  .ring2{animation-direction:reverse;animation-duration:12s}
  .pulse{animation:pulse 2s ease-in-out infinite}
  .blink{animation:blink 1.3s steps(2,end) infinite}
- @keyframes flow{to{stroke-dashoffset:-100}}
+ @keyframes flow{to{stroke-dashoffset:-300}}
  @keyframes spin{to{transform:rotate(360deg)}}
  @keyframes pulse{50%{opacity:.35}}
  @keyframes blink{50%{opacity:.15}}
